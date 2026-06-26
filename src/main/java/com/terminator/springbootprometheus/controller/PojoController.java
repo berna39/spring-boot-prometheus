@@ -14,8 +14,8 @@ public class PojoController {
     
 
     @GetMapping
-    public ResponseEntity<?> findAll(){
-        Map<String, String> response = new HashMap<>();
+    public ResponseEntity<?> findAll() {
+        final Map<String, String> response = new HashMap<>();
         response.put("message", "Hello world!");
 
         return ResponseEntity.ok().body(response);
